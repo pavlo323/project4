@@ -1,0 +1,278 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.65em;
+
+}
+.animated {
+	opacity: 0;
+}
+.logo {
+	margin-left: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background: -moz-linear-gradient(315deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(78,191,254,1)), color-stop(100%, rgba(55,143,217,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(315deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(315deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(315deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%); /* ie10+ */
+	background: linear-gradient(135deg, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebffe', endColorstr='#378fd9',GradientType=1 ); /* ie6-9 */
+	padding-top: 62px;
+	padding-bottom: 145px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+
+}
+.desktop {
+	margin-right: -47px;
+}
+
+.offer {
+	
+	width: 580px;
+}
+
+.title {
+	font-size: 37px;
+}
+
+.title span {
+	font-size: 59px;
+}
+
+
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	width: 400px;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffd429;
+	color: #2e2a1b;
+	display: block;
+	width: 220px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #e5c237;
+
+
+}
+
+
+.learn {
+	padding-top: 100px;
+	padding-bottom: 116px;
+}
+
+.section-title {
+	font-size: 30px;
+	display: flex; 
+	justify-content: center;
+
+
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.imege {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.text {
+	margin-top: 32px;
+	
+}
+.skill {
+	width: 280px;
+	padding: 0;
+
+}
+
+.skill-title {
+	font-size: 19px;
+	text-align: center;
+	
+}
+.skill-text {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	text-align: center;
+	
+}
+
+.skill-free {
+	width: 290px;
+}
+
+.skill-change {
+	width: 310px;
+}
+
+
+
+.section {
+	background: #ecf3f8;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+
+.section-title-form {
+	margin-bottom: 58px;
+}
+.form {
+	width: 340px;
+	margin-top: 40px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	width: 340px;
+	border: 1px solid #bbbbbb;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	border-radius: 5px;
+	height: 48px;
+	padding-left: 22px;
+	margin-bottom: 15px;
+	
+}
+
+.btn-form {
+	width: 340px;
+	border: 0;
+	
+}
+
+
+.footer {
+	padding: 60px 0;
+	background: #164d7a;
+}
+
+.credits {
+	color: #fff;
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+
+
+	}
+
+	 
+	.desktop {
+		width: 560px;
+		margin-right: 0px;
+	}
+	
+}
+
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 641px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.form {
+		width: 100%;
+	}
+	input {
+		width: 100%;
+	}
+}
